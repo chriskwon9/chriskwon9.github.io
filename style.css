@@ -1,0 +1,194 @@
+:root {
+  --text: #202124;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --link: #2563a6;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 36px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 42px;
+  align-items: start;
+  margin-bottom: 62px;
+}
+
+.profile-wrap { width: 210px; }
+
+.profile {
+  width: 210px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 27%;
+  border-radius: 5px;
+  display: block;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.korean-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.role {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.intro p { margin: 0 0 14px; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+section {
+  margin: 0 0 54px;
+}
+
+h2 {
+  margin: 0 0 22px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+}
+
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.interest-list span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.94rem;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 14px;
+  padding: 2px 0 28px;
+}
+
+.publication + .publication {
+  border-top: 1px solid #f0f1f2;
+  padding-top: 28px;
+}
+
+.pub-year {
+  color: var(--muted);
+  font-size: 0.93rem;
+  padding-top: 3px;
+}
+
+.pub-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-weight: 650;
+}
+
+.authors {
+  margin: 0 0 5px;
+  font-size: 0.95rem;
+}
+
+.authors .me {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.venue {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-style: italic;
+}
+
+.muted { color: var(--muted); }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: min(100% - 30px, 900px);
+    padding-top: 38px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .profile-wrap,
+  .profile {
+    width: 165px;
+  }
+
+  .profile { height: 198px; }
+
+  h1 { font-size: 1.8rem; }
+
+  .korean-name {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.08rem;
+  }
+
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .pub-year { margin-bottom: 6px; }
+}
