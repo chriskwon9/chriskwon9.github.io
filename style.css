@@ -39,6 +39,9 @@ body {
 
 .profile-wrap {
   width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .profile {
@@ -48,6 +51,7 @@ body {
   object-position: 50% 27%;
   border-radius: 50%;
   display: block;
+  transform: scale(1.15);
 }
 
 h1 {
@@ -182,12 +186,13 @@ footer {
     margin-bottom: 48px;
   }
 
-  .profile-wrap,
-  .profile {
+  .profile-wrap {
     width: 165px;
+    height: 165px;
   }
 
   .profile {
+    width: 165px;
     height: 165px;
   }
 
