@@ -120,6 +120,8 @@ h2 {
   font-size: 0.94rem;
 }
 
+/* Publications */
+
 .publication {
   display: grid;
   grid-template-columns: 64px 1fr;
@@ -162,6 +164,42 @@ h2 {
   color: var(--muted);
   font-size: 0.94rem;
   font-style: italic;
+}
+
+/* Projects */
+
+.project {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 18px;
+  padding: 2px 0 28px;
+}
+
+.project + .project {
+  border-top: 1px solid #f0f1f2;
+  padding-top: 28px;
+}
+
+.project-period {
+  color: var(--muted);
+  font-size: 0.93rem;
+  padding-top: 3px;
+}
+
+.project-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-weight: 650;
+}
+
+.project-title {
+  color: var(--link);
+}
+
+.project-content p {
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 .muted {
@@ -213,6 +251,15 @@ footer {
   }
 
   .pub-year {
+    margin-bottom: 6px;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .project-period {
     margin-bottom: 6px;
   }
 }
