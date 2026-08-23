@@ -29,6 +29,8 @@ body {
   padding: 72px 0 36px;
 }
 
+/* Hero */
+
 .hero {
   display: grid;
   grid-template-columns: 210px 1fr;
@@ -78,6 +80,8 @@ h1 {
   margin: 0 0 14px;
 }
 
+/* Links */
+
 a {
   color: var(--link);
   text-decoration: none;
@@ -95,6 +99,8 @@ a:hover {
   font-size: 0.95rem;
 }
 
+/* Sections */
+
 section {
   margin: 0 0 54px;
 }
@@ -104,8 +110,12 @@ h2 {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);
   font-size: 1.35rem;
+  line-height: 1.35;
   letter-spacing: -0.01em;
+  font-weight: 700;
 }
+
+/* Research Interests */
 
 .interest-list {
   display: flex;
@@ -173,6 +183,7 @@ h2 {
   grid-template-columns: 120px 1fr;
   gap: 18px;
   padding: 2px 0 28px;
+  align-items: start;
 }
 
 .project + .project {
@@ -184,11 +195,12 @@ h2 {
   color: var(--muted);
   font-size: 0.93rem;
   padding-top: 3px;
+  white-space: nowrap;
 }
 
 .project-content h3 {
   margin: 0 0 8px;
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.45;
   font-weight: 650;
 }
@@ -200,7 +212,10 @@ h2 {
 .project-content p {
   margin: 0;
   font-size: 0.95rem;
+  line-height: 1.65;
 }
+
+/* Misc */
 
 .muted {
   color: var(--muted);
@@ -212,6 +227,8 @@ footer {
   color: var(--muted);
   font-size: 0.86rem;
 }
+
+/* Mobile */
 
 @media (max-width: 700px) {
   .container {
